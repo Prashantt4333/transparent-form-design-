@@ -1,5 +1,9 @@
+@font-face {
+    font-family: myFont;
+    src: url(../font/Combo-Regular.ttf);
+}
 body{
-    background-image:url(./img/bg.jpg) ;
+    background-image:url(../img/bg.jpg) ;
     background-size: cover;
     margin: 0px;
     font-family: myFont, Helvetica, sans-serif;
@@ -20,13 +24,7 @@ body{
      top: 100px;
      left: 280px;
      background-color: rgba(0, 0, 0, 0.6);
-     border-radius: 10px;
-     
-     
- }
- @font-face {
-     font-family: myFont;
-     src: url(./font/Combo-Regular.ttf);
+     border-radius: 10px; 
  }
  form h1{
      text-align: center;
