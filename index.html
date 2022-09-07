@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transparent Form </title>
+        <link rel="stylesheet" href="../transperent Form/css/style.css" />
+        
+        <style>
+            body{
+               background-image:url(./img/bg.jpg) ;
+               background-size: cover;
+               margin: 0px;
+               font-family: myFont, Helvetica, sans-serif;
+               
+            }
+            div.overlay{
+                width: 100%;
+                height: 753px;
+                background-color: rgba(0, 0, 0, 0.1);
+                
+            }
+            form.myform{
+                width:28%;
+                color: #fff;
+                
+                height: 500px;
+                position: absolute;
+                top: 100px;
+                left: 280px;
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 10px;
+                
+                
+            }
+            @font-face {
+                font-family: myFont;
+                src: url(./font/Combo-Regular.ttf);
+            }
+            form h1{
+                text-align: center;
+            }
+            form a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.8em;
+                margin-left: 25px;
+                
+            }
+            form .signup{
+                color: #8f8e8e;
+            }
+            form.myform > div{
+                margin-top: 30px;
+                font-size: 1.3em;
+                padding-left: 25px;
+            }
+            input[type="text"],input[type="password"]{
+                width: 80%;
+                height: 25px;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                
+            }
+            input[type=submit]{
+                width: 90%;
+                height: 40px;
+                background-color: transparent;
+                color: #FFF;
+                font-size: 1em;
+                border: none;
+                
+            }
+            #checkbox{
+                font-size:1em;
+                padding-left: 10px;
+                margin-top: 20px;
+            }
+            .Signin{
+                border-bottom: 2px solid #8f8e8e;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-bottom: 5px;
+            }
+            button{
+                font-size: 0.8em;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+                padding-left: 115px;
+                
+            }
+        </style>
+    </head>
+    <body >
+        <div class="overlay">
+            
+        </div>
+        <form class="myform">
+            <h1>Log In</h1>
+            <a class="signin" href="">SIGN IN</a>
+            <a class="signup" href="">SIGN UP</a>
+            <div class="email">
+                <label for="em">Email</label><br />
+                <input type="text" name="email" id="em"/>
+            </div>
+            <div class="password">
+                <label for="pw">Password</label><br />
+                <input type="password" name="password" id="pw"/>
+            </div>
+            <div>
+                <label id="checkbox">
+                    <input type="checkbox" name="checkbox" value="Keep me Signed In"/>Keep me Signed In
+                </label>
+            </div>
+            <div class="Signin">
+                <input type="submit" name="submit" value="SIGN IN" />
+            </div>
+            <div>
+                <button>Forget Password?</button>
+            </div>
+        </form>
+    </body>
+</html>
