@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forget Form </title>
+        <link rel="stylesheet" href="./forgetcss/forget.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script href="./forget.js/forget.js"></script>
+        
+        <style>
+          @font-face {
+              font-family: myFont;
+              src: url(./font/Combo-Regular.ttf);
+          }
+          body{
+              background-image:url(./img/bg.jpg) ;
+              background-size: cover;
+              margin: 0px;
+              font-family: myFont, Helvetica, sans-serif;
+              background-repeat: no-repeat;
+          }
+          div.overlay{
+              width: 100%;
+              height: 753px;
+              background-color: rgba(0, 0, 0, 0.1);
+              
+          }
+          form.myform{
+              width:35%;
+              color: #fff;       
+              height:400px;
+              position: absolute;
+              top: 200px;
+              left: 200px;
+              background-color: rgba(0, 0, 0, 0.6);
+              border-radius: 10px; 
+          }
+          form h1{
+              text-align: center;
+          }
+          div.mail{
+            padding-left: 50px;
+            font-size: 1.5em;
+          }
+          div > input{
+            background-color: transparent;
+            margin-top: 10px;
+            width: 85%;
+            height: 30px;
+            border: 1px solid #a8a6a6;
+            color: #fff;
+            font-size: 0.7em;
+            border-radius: 5px;
+          }
+          
+          div input[type="submit"]{
+            background-color: transparent;
+            margin-top: 40px;
+            width: 20%;
+            height: 40px;
+            border: 1px solid #a8a6a6;
+            color: #fff;
+            font-size: 0.8em;
+            border-radius: 5px;
+          } 
+          .butt{
+            text-align: center;
+            
+          }
+          div label{
+            text-align: center;
+          }
+          .otp{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            
+            padding-top: 10px;
+          }
+         .otp input{
+          margin: 0.5rem;
+          padding: 0.5rem;
+          max-width: 0.8rem;
+          text-align: center;
+        }
+        .arrow{
+          height:34px;
+          width: 35px;
+          background-color: transparent;
+          border: 1px solid #fff;
+          border-radius: 5px;
+
+        }
+        .fa-solid{
+         color: #fff;
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+          -webkit-appearance: none; 
+          margin: 0; 
+        }
+        </style>
+    </head>
+    <body >
+        <div class="overlay">
+            
+        </div>
+        <form class="myform">
+            <h1>Forget Password</h1>
+            <div class="mail">
+              <label for="ml">Enter Your Email</label><br />
+              <input type="text" name="email" id="ml" placeholder="email" />
+              <button class="arrow" onclick="myFunction()">
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </div>
+            <div class="otp">
+              <input type="number" class="ot" id="otp-first"  min="0" max="9" step="1" aria-label="first digit" />
+              <input type="number" class="ot" id="otp-second"  min="0" max="9" step="2" aria-label="second digit" />
+              <input type="number" class="ot" id="otp-third"  min="0" max="9" step="3" aria-label="third digit" /> 
+            
+              <input type="number" class="ot" id="otp-fourth"  min="0" max="9" step="4" aria-label="first digit" />
+              <input type="number" class="ot" id="otp-fifth"  min="0" max="9" step="5" aria-label="second digit" />
+              <input type="number" class="ot" id="otp-sixth"  min="0" max="9" step="6" aria-label="third digit" /> 
+            </div>
+            
+            <div class="butt">
+              <input type="submit" class="submit" value="Send">
+            </div>
+        </form>
+    </body>
+</html>

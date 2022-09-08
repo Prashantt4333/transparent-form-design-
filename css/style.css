@@ -85,3 +85,7 @@ body{
      cursor: pointer !important;
      /* background-color: red !important; */
  }
+ .forget{
+    font-size:1em ;
+    padding-left: 65px;
+ }
